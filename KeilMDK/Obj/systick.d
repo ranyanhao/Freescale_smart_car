@@ -1,0 +1,12 @@
+.\obj\systick.o: ..\Libraries\drivers\K\src\systick.c
+.\obj\systick.o: ..\Libraries\drivers\K\inc\systick.h
+.\obj\systick.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\systick.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\obj\systick.o: ..\Libraries\drivers\K\inc\common.h
+.\obj\systick.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\obj\systick.o: ..\Libraries\startup\DeviceSupport\MK60D10.h
+.\obj\systick.o: ..\Libraries\startup\CoreSupport\core_cm4.h
+.\obj\systick.o: ..\Libraries\startup\CoreSupport\core_cmInstr.h
+.\obj\systick.o: ..\Libraries\startup\CoreSupport\core_cmFunc.h
+.\obj\systick.o: ..\Libraries\startup\CoreSupport\core_cm4_simd.h
+.\obj\systick.o: ..\Libraries\startup\DeviceSupport\system_MK60D10.h

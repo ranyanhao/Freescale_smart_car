@@ -1,0 +1,14 @@
+.\obj\ftm.o: ..\Libraries\drivers\K\src\ftm.c
+.\obj\ftm.o: ..\Libraries\drivers\K\inc\ftm.h
+.\obj\ftm.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\ftm.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\obj\ftm.o: ..\Libraries\drivers\K\inc\common.h
+.\obj\ftm.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\obj\ftm.o: ..\Libraries\startup\DeviceSupport\MK60D10.h
+.\obj\ftm.o: ..\Libraries\startup\CoreSupport\core_cm4.h
+.\obj\ftm.o: ..\Libraries\startup\CoreSupport\core_cmInstr.h
+.\obj\ftm.o: ..\Libraries\startup\CoreSupport\core_cmFunc.h
+.\obj\ftm.o: ..\Libraries\startup\CoreSupport\core_cm4_simd.h
+.\obj\ftm.o: ..\Libraries\startup\DeviceSupport\system_MK60D10.h
+.\obj\ftm.o: ..\Libraries\drivers\K\inc\gpio.h
+.\obj\ftm.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\math.h

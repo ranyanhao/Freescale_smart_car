@@ -1,0 +1,29 @@
+#include "includes.h"
+
+OS_STK LED_TASK_STK[LED_TASK_STK_SIZE];
+OS_STK SCU_TASK_STK[SCU_TASK_STK_SIZE];
+OS_STK CCD_TASK_STK[CCD_TASK_STK_SIZE];
+OS_STK DIR_TASK_STK[DIR_TASK_STK_SIZE];
+
+OS_EVENT *Str_Box_1;
+OS_EVENT *Str_Box_2;
+
+
+int main()
+{
+	BSP_Init();
+	OSInit();
+	Str_Box_1 = OSMboxCreate((void*)0);   
+	Str_Box_2 = OSMboxCreate((void*)0);  
+	OSTaskCreate(LED_TASK,(void*)0,&LED_TASK_STK[LED_TASK_STK_SIZE-1],LED_TASK_PRIO);
+	
+	OSTaskCreate(SCU_TASK,(void*)0,&SCU_TASK_STK[SCU_TASK_STK_SIZE-1],SCU_TASK_PRIO);
+	OSTaskCreate(CCD_TASK,(void*)0,&CCD_TASK_STK[CCD_TASK_STK_SIZE-1],CCD_TASK_PRIO);
+	OSTaskCreate(DIR_TASK,(void*)0,&DIR_TASK_STK[DIR_TASK_STK_SIZE-1],DIR_TASK_PRIO);
+	OSStart();
+	return (0);
+}
+
+
+
+

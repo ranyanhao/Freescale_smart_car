@@ -1,0 +1,12 @@
+.\obj\dma.o: ..\Libraries\drivers\K\src\dma.c
+.\obj\dma.o: ..\Libraries\drivers\K\inc\dma.h
+.\obj\dma.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\dma.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\obj\dma.o: ..\Libraries\drivers\K\inc\common.h
+.\obj\dma.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\obj\dma.o: ..\Libraries\startup\DeviceSupport\MK60D10.h
+.\obj\dma.o: ..\Libraries\startup\CoreSupport\core_cm4.h
+.\obj\dma.o: ..\Libraries\startup\CoreSupport\core_cmInstr.h
+.\obj\dma.o: ..\Libraries\startup\CoreSupport\core_cmFunc.h
+.\obj\dma.o: ..\Libraries\startup\CoreSupport\core_cm4_simd.h
+.\obj\dma.o: ..\Libraries\startup\DeviceSupport\system_MK60D10.h

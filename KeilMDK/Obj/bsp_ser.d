@@ -1,0 +1,10 @@
+.\obj\bsp_ser.o: ..\BSP\bsp_ser.c
+.\obj\bsp_ser.o: ..\BSP\bsp_ser.h
+.\obj\bsp_ser.o: ..\BSP\bsp.h
+.\obj\bsp_ser.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
+.\obj\bsp_ser.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\bsp_ser.o: ..\APP\app_cfg.h
+.\obj\bsp_ser.o: ..\BSP\bsp_os.h
+.\obj\bsp_ser.o: ..\uCOS-II\Source\ucos_ii.h
+.\obj\bsp_ser.o: ..\APP\os_cfg.h
+.\obj\bsp_ser.o: ..\uCOS-II\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h

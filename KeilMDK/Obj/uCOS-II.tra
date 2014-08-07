@@ -1,0 +1,46 @@
+*** Creating Trace Output File '.\Obj\uCOS-II.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\app.o"'
+### List of Objects: adding '".\obj\app_hooks.o"'
+### List of Objects: adding '".\obj\cstartup.o"'
+### List of Objects: adding '".\obj\bsp.o"'
+### List of Objects: adding '".\obj\bsp_int.o"'
+### List of Objects: adding '".\obj\bsp_ser.o"'
+### List of Objects: adding '".\obj\bsp_os.o"'
+### List of Objects: adding '".\obj\lib_ascii.o"'
+### List of Objects: adding '".\obj\lib_math.o"'
+### List of Objects: adding '".\obj\lib_mem.o"'
+### List of Objects: adding '".\obj\lib_str.o"'
+### List of Objects: adding '".\obj\lib_mem_a.o"'
+### List of Objects: adding '".\obj\cpu_core.o"'
+### List of Objects: adding '".\obj\cpu_a.o"'
+### List of Objects: adding '".\obj\cpu_c.o"'
+### List of Objects: adding '".\obj\os_cpu_a.o"'
+### List of Objects: adding '".\obj\os_cpu_c.o"'
+### List of Objects: adding '".\obj\os_dbg.o"'
+### List of Objects: adding '".\obj\os_core.o"'
+### List of Objects: adding '".\obj\os_flag.o"'
+### List of Objects: adding '".\obj\os_mbox.o"'
+### List of Objects: adding '".\obj\os_mem.o"'
+### List of Objects: adding '".\obj\os_mutex.o"'
+### List of Objects: adding '".\obj\os_q.o"'
+### List of Objects: adding '".\obj\os_sem.o"'
+### List of Objects: adding '".\obj\os_task.o"'
+### List of Objects: adding '".\obj\os_time.o"'
+### List of Objects: adding '".\obj\os_tmr.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M4 ".\obj\app.o" ".\obj\app_hooks.o" ".\obj\cstartup.o" ".\obj\bsp.o" ".\obj\bsp_int.o" ".\obj\bsp_ser.o" ".\obj\bsp_os.o" ".\obj\lib_ascii.o" ".\obj\lib_math.o" ".\obj\lib_mem.o" ".\obj\lib_str.o" ".\obj\lib_mem_a.o" ".\obj\cpu_core.o" ".\obj\cpu_a.o" ".\obj\cpu_c.o" ".\obj\os_cpu_a.o" ".\obj\os_cpu_c.o" ".\obj\os_dbg.o" ".\obj\os_core.o" ".\obj\os_flag.o" ".\obj\os_mbox.o" ".\obj\os_mem.o" ".\obj\os_mutex.o" ".\obj\os_q.o" ".\obj\os_sem.o" ".\obj\os_task.o" ".\obj\os_time.o" ".\obj\os_tmr.o" --strict --scatter ".\Obj\uCOS-II.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\uCOS-II.map" -o .\Obj\uCOS-II.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\uCOS-II.axf'
+### ADS-LD Command File: '.\Obj\uCOS-II.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\uCOS-II.lnp', Handle=0x000002D4
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\uCOS-II.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 1 errors
+### Updating obj list
+### LDADS_file() completed.

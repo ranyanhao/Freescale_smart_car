@@ -1,0 +1,9 @@
+.\obj\bsp_int.o: ..\BSP\bsp_int.c
+.\obj\bsp_int.o: ..\BSP\bsp.h
+.\obj\bsp_int.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdarg.h
+.\obj\bsp_int.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
+.\obj\bsp_int.o: ..\APP\app_cfg.h
+.\obj\bsp_int.o: ..\BSP\bsp_os.h
+.\obj\bsp_int.o: ..\uCOS-II\Source\ucos_ii.h
+.\obj\bsp_int.o: ..\APP\os_cfg.h
+.\obj\bsp_int.o: ..\uCOS-II\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h

@@ -1,0 +1,12 @@
+.\obj\gpio.o: ..\Libraries\drivers\K\src\gpio.c
+.\obj\gpio.o: ..\Libraries\drivers\K\inc\gpio.h
+.\obj\gpio.o: ..\Libraries\drivers\K\inc\common.h
+.\obj\gpio.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\gpio.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\obj\gpio.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\obj\gpio.o: ..\Libraries\startup\DeviceSupport\MK60D10.h
+.\obj\gpio.o: ..\Libraries\startup\CoreSupport\core_cm4.h
+.\obj\gpio.o: ..\Libraries\startup\CoreSupport\core_cmInstr.h
+.\obj\gpio.o: ..\Libraries\startup\CoreSupport\core_cmFunc.h
+.\obj\gpio.o: ..\Libraries\startup\CoreSupport\core_cm4_simd.h
+.\obj\gpio.o: ..\Libraries\startup\DeviceSupport\system_MK60D10.h

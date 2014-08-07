@@ -1,0 +1,13 @@
+.\obj\i2c.o: ..\Libraries\drivers\K\src\i2c.c
+.\obj\i2c.o: ..\Libraries\drivers\K\inc\i2c.h
+.\obj\i2c.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\i2c.o: ..\Libraries\drivers\K\inc\gpio.h
+.\obj\i2c.o: ..\Libraries\drivers\K\inc\common.h
+.\obj\i2c.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\obj\i2c.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\obj\i2c.o: ..\Libraries\startup\DeviceSupport\MK60D10.h
+.\obj\i2c.o: ..\Libraries\startup\CoreSupport\core_cm4.h
+.\obj\i2c.o: ..\Libraries\startup\CoreSupport\core_cmInstr.h
+.\obj\i2c.o: ..\Libraries\startup\CoreSupport\core_cmFunc.h
+.\obj\i2c.o: ..\Libraries\startup\CoreSupport\core_cm4_simd.h
+.\obj\i2c.o: ..\Libraries\startup\DeviceSupport\system_MK60D10.h

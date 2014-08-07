@@ -1,0 +1,13 @@
+.\obj\enet.o: ..\Libraries\drivers\K\src\enet.c
+.\obj\enet.o: ..\Libraries\drivers\K\inc\enet.h
+.\obj\enet.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\obj\enet.o: ..\Libraries\drivers\K\inc\common.h
+.\obj\enet.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\obj\enet.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\obj\enet.o: ..\Libraries\startup\DeviceSupport\MK60D10.h
+.\obj\enet.o: ..\Libraries\startup\CoreSupport\core_cm4.h
+.\obj\enet.o: ..\Libraries\startup\CoreSupport\core_cmInstr.h
+.\obj\enet.o: ..\Libraries\startup\CoreSupport\core_cmFunc.h
+.\obj\enet.o: ..\Libraries\startup\CoreSupport\core_cm4_simd.h
+.\obj\enet.o: ..\Libraries\startup\DeviceSupport\system_MK60D10.h
+.\obj\enet.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\string.h
