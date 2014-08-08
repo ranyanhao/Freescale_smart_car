@@ -16,6 +16,6 @@ uint8_t Data_sort(uint8_t data[5]);
 void Data_binarization(uint8_t average);
 uint8_t averaging(void);
 void CCD_Filtering(void);
-
+void CCD_Restet(void);
 
 #endif

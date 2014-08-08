@@ -58,7 +58,7 @@ int PID_Calc(uint8_t pid_flag, int NextPoint, uint8_t Track_Midline)
 		}
 		else if(abs(iError_1) >= 1 && abs(iError) <= 5)
 		{
-		  sptr->Proportion_1 = 2;
+		  sptr->Proportion_1 = 1;
 		}
     else
 		{

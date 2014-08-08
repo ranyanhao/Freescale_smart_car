@@ -33,13 +33,13 @@ void SCU_TASK(void *p_arg)
 		 PWM_Duty += PID_Calc(0, *speed, 0);
      B = PWM_Duty;
 		 printf("PWM = %d\n",B);
-		 if(PWM_Duty >= 1500)
+		 if(PWM_Duty >= 1000)
 		 {
-		   FTM_PWM_ChangeDuty(HW_FTM0,HW_FTM_CH0,1500);  /* 0-10000 对应 0-100%占空比 */
+		   FTM_PWM_ChangeDuty(HW_FTM0,HW_FTM_CH0,1000);  /* 0-10000 对应 0-100%占空比 */
 		 //	LCD_Print(1,5,"FULL_SPEED");
 		 	printf("PWM_Duty = 100 \n");
 		 }
-		  if(PWM_Duty > 0 && PWM_Duty < 1500)
+		  if(PWM_Duty > 0 && PWM_Duty < 1000)
 		 {
 		   FTM_PWM_ChangeDuty(HW_FTM0,HW_FTM_CH0,PWM_Duty);  /* 0-10000 对应 0-100%占空比 */
 		 //	LCD_Print(1,7,"Part_SPEED");
@@ -90,6 +90,7 @@ void CCD_TASK(void *p_arg)
 {
   (void)p_arg;
 	uint8_t Track_Midline_value,A;
+		CCD_Restet();
 	while(1)
 	{                    
 		CCD_gather(); 

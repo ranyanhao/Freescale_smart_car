@@ -26,7 +26,7 @@ typedef struct PID        //定义PID 的结构体
 #define I_DATA 0
 #define D_DATA 0
 
-#define P_DATA_1 5
+#define P_DATA_1 3
 #define I_DATA_1 0.6
 #define D_DATA_1 1
 

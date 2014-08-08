@@ -7,33 +7,55 @@ uint8_t CCD_filtering_data[128]={0};
 
 void CCD_gather(void)
 {
-	  OS_CPU_SR  cpu_sr;
-    uint8_t i=0;
-		CCD_SI(0);
- 	  CCD_CLK(0);
-	  CCD_SI(1);
-	  CCD_CLK(1);
-	  Delay_stick(40);
- 	  CCD_SI(0);
-		
-	  OS_ENTER_CRITICAL();  //  关中断
-	  for(i=0;i<128;i++)
-	  {
-      CCD_CLK(1);
-		  Delay_stick(10);
-		  CCD_original_data[i+2] = ADC_QuickReadValue(ADC0_SE8_PB0);
-		  CCD_CLK(0);
-		  Delay_stick(10);
-    }
-		OS_EXIT_CRITICAL();   //开中断
-		
-//		for(i=0;i<128;i++)
-//		{
-//		  printf("CCD_data = %d\n",CCD_data[i]);
-//		}
+	uint8_t i;
+	OS_CPU_SR cpu_sr;
+//????????????
+	CCD_CLK(0);
+	__nop();
+	CCD_SI(1);  //??SI
+	__nop();
+	CCD_CLK(1);
+	__nop();
+	CCD_SI(0);
+	__nop();
+	
+	OS_ENTER_CRITICAL();  //  关中断
+	for(i=0;i<128;i++)   //??1-128????
+	{
+	  CCD_CLK(0);
+	  __nop();
+		CCD_original_data[i+2] = ADC_QuickReadValue(ADC0_SE8_PB0);
+		CCD_CLK(1);
+		__nop();
+	}
+	OS_EXIT_CRITICAL();   //开中断
+	__nop();   //???129?CLK
+	CCD_CLK(1);
+	__nop();
+	CCD_CLK(0);
+	__nop();
 }
 
-
+void CCD_Restet(void)
+{
+	uint8_t i=0;
+  CCD_CLK(0);
+	__nop();
+	CCD_SI(1);
+	__nop();
+	CCD_CLK(1);//?????CLK
+	__nop();
+	CCD_SI(0);  
+	__nop();  
+	
+	for(i=1;i<129;i++)   //???2--129?CLK
+	{
+		CCD_CLK(0);
+	  __nop();
+    CCD_CLK(1);
+		__nop();
+	}
+}
 
 
 void CCD_Filtering(void)      //数据滤波
