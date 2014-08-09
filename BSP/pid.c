@@ -2,7 +2,7 @@
 
 static PID sPID;
 static PID*sptr = &sPID;
-int16_t iError_1;               //当前误差
+int iError_1;               //当前误差
 
 
 void PID_Init(void)
@@ -27,7 +27,7 @@ int PID_Calc(uint8_t pid_flag, int NextPoint, uint8_t Track_Midline)
   int iError,A,B;                 //当前误差
 	int iIncpid;                //增量值
 	double iIncpid_1;              //增量值
-	float slope;
+	int slope;
 	if(pid_flag==0)
 	{
 	 iError = sptr->SetPoint - NextPoint;
@@ -51,8 +51,18 @@ int PID_Calc(uint8_t pid_flag, int NextPoint, uint8_t Track_Midline)
 	else
 	{
 	 iError_1 = Track_Midline - sptr->View_Midline;
-	 slope = (float)(iError_1 - sptr->LastError)/0.05;
-	 sptr->Proportion_1 = slope*slope + 5.0 * slope + 3.0;
+	 slope = (iError_1 - sptr->LastError);///0.05;
+		B = slope;
+		printf("slope = %d\n",B);
+		if(slope >=0)
+		{
+		 sptr->Proportion_1 = slope*slope + 5.0 * slope + 3.0;
+		}
+		else
+		{
+		 sptr->Proportion_1 = slope*slope - 5.0 * slope + 3.0;
+		}
+	
    
    iIncpid_1 = sptr->Proportion_1 * iError_1 + sptr->Derivative * sptr->LastError;		
 	 sptr->LastError_1 = iError_1;
