@@ -19,7 +19,7 @@ float Servo_pwm(double servo_corner)
 	double Servo_pwm_duty;
 	if(servo_corner != 0)
 	{
-	  Servo_pwm_duty = 750 + servo_corner;
+	  Servo_pwm_duty = 750 - servo_corner;
 	}
 	else
 	{
