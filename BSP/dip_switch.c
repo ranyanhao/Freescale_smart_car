@@ -1,5 +1,5 @@
 #include "dip_switch.h"
-extern int16_t iError_1;
+extern int iError_1;
 
 uint32_t dip_state(void)
 {
@@ -14,7 +14,7 @@ uint32_t Speed_Set(void)
 	uint32_t switch_state;
 	switch_state = dip_state();
 	state = (switch_state & 0x0000f000)>>12;
-  speed = 31*state + 310 - (2* iError_1* iError_1);    //最小速度1m/s,拨码每刻度增加0.1m/s  310
+  speed = 31*state + 310 - (5* iError_1* iError_1);    //最小速度1m/s,拨码每刻度增加0.1m/s  310
 	if(speed < 50)
 	{
     speed  = 50;	
