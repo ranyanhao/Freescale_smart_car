@@ -23,10 +23,10 @@ void SCU_TASK(void *p_arg)
 	int PWM_Duty = 0;
 	int B;
   (void)p_arg;  
-  PID_Init();
 	LCD_Print(1,2,"speed = 1.0m/s");
 	while(1)
 	{
+		PID_Init();
 		speed = OSMboxPend(Str_Box_1,0,&err);   //请求消息；获得当前速度
 	  // printf("process_point = %d\n",*speed);
 		 
@@ -70,13 +70,9 @@ void DIR_TASK(void *p_arg)
 			B = *Track_Midline_value;
 			printf("Track_value = %f\n",B);
 			Location_corner = PID_Calc(1, 0, *Track_Midline_value);
-			servo_corner = Servo_Angle(Location_corner);
-			
 			D = servo_corner;
 			printf("servo_corner = %f\n",D);
-			
-			
-			Servo_pwm_duty = Servo_pwm(servo_corner);
+			Servo_pwm_duty = Servo_pwm(Location_corner);
 			A = Servo_pwm_duty;
 			printf("Servo_pwm_duty = %f\n",A);
 			FTM_PWM_ChangeDuty(HW_FTM1,HW_FTM_CH0,Servo_pwm_duty);	

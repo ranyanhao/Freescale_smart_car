@@ -17,20 +17,14 @@ double Servo_Angle(double Location_corner)
 float Servo_pwm(double servo_corner)
 {
 	double Servo_pwm_duty;
-	printf("servo_corneraa = %f\n",servo_corner);
- if(servo_corner > 0.000)
- {
-   Servo_pwm_duty = (3.000 / 40.000) - (servo_corner*(1.000 / 90.000)) / 20.000;  // 3/40表示0度位置时的占空比
- }
- else if (servo_corner < 0.000)
- {
-   Servo_pwm_duty = (3.000 / 40.000) - (servo_corner*(1.000 / 90.000)) / 20.000;
- }
- else
- {
-  Servo_pwm_duty = (3.000/ 40.000);
- }
- Servo_pwm_duty = Servo_pwm_duty * 10000;
- printf("Servo_pwm_duty = %f\n",Servo_pwm_duty);
+	if(servo_corner != 0)
+	{
+	  Servo_pwm_duty = 750 + servo_corner;
+	}
+	else
+	{
+	  Servo_pwm_duty = 750;
+	}
+
  return (Servo_pwm_duty);
 }	

@@ -27,8 +27,8 @@ typedef struct PID        //定义PID 的结构体
 #define D_DATA 0
 
 #define P_DATA_1 3
-#define I_DATA_1 0.6
-#define D_DATA_1 1
+#define I_DATA_1 0
+#define D_DATA_1 5
 
 void PID_Init(void);
 int PID_Calc(uint8_t pid_flag, int NextPoint, uint8_t Track_Midline);
